@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { mockEvents } from '@/data/mock-data';
 import { EventCard } from '@/components/cards/event-card';
-import { ArrowRight, Users, DownloadCloud, CalendarCheck } from 'lucide-react';
+import { ArrowRight, Users } from 'lucide-react';
 
 export default function HomePage() {
   const featuredEvents = mockEvents.filter(event => new Date(event.date) > new Date()).slice(0, 3);
@@ -50,7 +50,7 @@ export default function HomePage() {
                         className="text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-foreground to-muted-foreground"
                         style={{textShadow: '0 2px 4px rgba(0,0,0,0.2)'}}
                       >
-                        500+
+                        600+
                       </p>
                       <p className="text-xl text-foreground/80 mt-2 font-headline tracking-wide">
                         AAH Memberships
